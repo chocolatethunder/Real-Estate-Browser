@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace RealEstateBrowser
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Welcome3.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Welcome3 : Window
     {
-        public MainWindow()
+        public Welcome3()
         {
             InitializeComponent();
         }
