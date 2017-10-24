@@ -1,0 +1,15 @@
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser.csprojResolveAssemblyReference.cache
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\MainWindow.g.cs
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\App.g.cs
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\MainWindow.baml
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser.csproj.GenerateResource.Cache
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser.csproj.CoreCompileInputs.cache
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\bin\Debug\RealEstateBrowser.exe.config
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\bin\Debug\RealEstateBrowser.exe
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\bin\Debug\RealEstateBrowser.pdb
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser_MarkupCompile.cache
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser_MarkupCompile.lref
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser.g.resources
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser.Properties.Resources.resources
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser.exe
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser.pdb
