@@ -7,6 +7,57 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Rectangle Fill="#FFF4F4F5" Margin="73,47" Stroke="Black"/>
+        <TextBlock Margin="216,111,216,0" TextWrapping="Wrap" Text="Let's get started" VerticalAlignment="Top" RenderTransformOrigin="0.235,-3.125" TextAlignment="Center"/>
+        <TextBlock Margin="208,80,209,0" TextWrapping="Wrap" Text="Welcome!" VerticalAlignment="Top" FontSize="20" TextAlignment="Center"/>
+        <ComboBox Margin="192,190,193,0" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="House" HorizontalAlignment="Left" Width="130"/>
+            <ComboBoxItem Content="Apartment" HorizontalAlignment="Left" Width="130"/>
+            <ComboBoxItem Content="Condo" HorizontalAlignment="Left" Width="130"/>
+        </ComboBox>
+        <TextBlock Margin="149,160,149,0" TextWrapping="Wrap" Text="What type of house are you looking for?" VerticalAlignment="Top"/>
+        <Ellipse Fill="#FF010113" HorizontalAlignment="Left" Height="15" Margin="208,234,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="238,234,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="268,234,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="298,234,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="340,230,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="110,230,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
