@@ -26,7 +26,17 @@ namespace RealEstateBrowser
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
+        }
 
+        private void TextBox_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SearchBar.Text = "";
+        }
+
+        private void TextBox_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SearchBar.Text = "Enter a location ...";
         }
     }
 }

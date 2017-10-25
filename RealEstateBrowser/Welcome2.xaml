@@ -26,7 +26,7 @@
                 </TransformGroup>
             </Ellipse.RenderTransform>
         </Ellipse>
-        <Ellipse Fill="#FF010113" Height="15" Margin="251,234,251,0" Stroke="Black" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        <Ellipse Fill="#FF010113" Height="15" Width="15" Margin="251,234,251,0" Stroke="Black" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="-1"/>
@@ -36,7 +36,7 @@
                 </TransformGroup>
             </Ellipse.RenderTransform>
         </Ellipse>
-        <Ellipse Fill="#FFF4F4F5" Height="15" Margin="282,234,220,0" Stroke="Black" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        <Ellipse Fill="#FFF4F4F5" Height="15" Width="15" Margin="282,234,220,0" Stroke="Black" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
             <Ellipse.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="-1"/>

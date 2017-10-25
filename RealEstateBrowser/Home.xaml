@@ -5,15 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RealEstateBrowser"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <TextBox Margin="120,144,192,145" TextWrapping="Wrap" Text="Enter a location ..." FontSize="14" FontStyle="Italic"/>
-        <Button Margin="367,144,120,0" VerticalAlignment="Top" Height="30" Click="Button_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="pack://siteoforigin:,,,/Resources/gps.png"/>
-            </Button.Background>
+        Title="Home" Height="768" Width="1024">
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBox Name="SearchBar"
+            TextWrapping="NoWrap"
+            Margin="0,0,10,0"
+            Text="Enter a location ..."
+            TextAlignment="Left"
+            Width="500"
+            FontSize="32" FontStyle="Italic"
+            MouseEnter="TextBox_MouseEnter" MouseLeave="TextBox_MouseLeave">
+        </TextBox>
+        <Button
+            Content="Go"
+            Click="Button_Click"
+            Margin="0,0,10,0"
+            HorizontalAlignment="Center" VerticalAlignment="Center"
+            Width="60" Height="60"
+            FontSize="32" FontWeight="Bold"/>
+        <Button Height="60" Width="60" Click="Button_Click">
+            <StackPanel>
+                <Image Source="pack://application:,,,/Resources/gps.png"></Image>
+            </StackPanel>
         </Button>
-        <Button Content="Go" HorizontalAlignment="Left" Margin="330,144,0,0" VerticalAlignment="Top" Width="32" Height="30" FontSize="16"/>
-
-    </Grid>
+    </StackPanel>
 </Window>
