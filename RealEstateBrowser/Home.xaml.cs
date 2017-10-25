@@ -22,12 +22,16 @@ namespace RealEstateBrowser
         public Home()
         {
             InitializeComponent();
+            App.Current.MainWindow.WindowState = WindowState.Maximized;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window welcome1 = new Welcome1();
-            welcome1.Activate(); 
+            Welcome1 welcome1 = new Welcome1();
+            App.Current.MainWindow = welcome1;
+            welcome1.WindowState = WindowState.Maximized;
+            welcome1.Show();
+            this.Close();
         }
 
         private void Location_Button_Click(object sender, RoutedEventArgs e)

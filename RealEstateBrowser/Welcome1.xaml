@@ -21,11 +21,11 @@
             </ComboBox>
         </StackPanel>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,230">
-            <Button Content="Back" Width="75" Height="30" Margin="0,0,30,0" FontSize="16"/>
+            <Button Content="Back" Width="75" Height="30" Margin="0,0,30,0" FontSize="16" Click="Back_Click"/>
             <Ellipse Fill="#FF010113" Height="15" Stroke="Black" Width="15" Margin="0,0,10,0"></Ellipse>
             <Ellipse Fill="#FFF4F4F5" Height="15" Stroke="Black" Width="15" Margin="0,0,10,0"></Ellipse>
             <Ellipse Fill="#FFF4F4F5" Height="15" Stroke="Black" Width="15" Margin="0,0,30,0"></Ellipse>
-            <Button Content="Next" Width="75" Height="30" FontSize="16"/>
+            <Button Content="Next" Width="75" Height="30" FontSize="16" Click="Next_Click"/>
         </StackPanel>
         <TextBlock Margin="0,0,0,170" VerticalAlignment="Bottom" TextWrapping="Wrap" Text="Skip to advanced search" FontSize="14" TextAlignment="Center" Foreground="#FF2E8BAE"/>
     </Grid>

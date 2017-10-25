@@ -29,5 +29,23 @@ namespace RealEstateBrowser
         {
 
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            Home home = new Home();
+            App.Current.MainWindow = home;
+            home.WindowState = WindowState.Maximized;
+            home.Show();
+            this.Close();
+        }
+
+        private void Next_Click(object sender, RoutedEventArgs e)
+        {
+            Welcome2 welcome2 = new Welcome2();
+            App.Current.MainWindow = welcome2;
+            welcome2.WindowState = WindowState.Maximized;
+            welcome2.Show();
+            this.Close();
+        }
     }
 }

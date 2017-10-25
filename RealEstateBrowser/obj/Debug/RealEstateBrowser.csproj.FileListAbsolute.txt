@@ -18,3 +18,11 @@ C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\De
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser.csproj.CoreCompileInputs.cache
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser.exe
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser.pdb
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\Home2.g.cs
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\Home2.baml
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\bin\Debug\MapControl.WPF.dll
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\bin\Debug\Microsoft.Maps.MapControl.WPF.dll
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser.csprojResolveAssemblyReference.cache
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\Map.baml
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\Map.g.cs

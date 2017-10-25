@@ -1,0 +1,35 @@
+﻿<Window x:Class="RealEstateBrowser.Home2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RealEstateBrowser"
+        mc:Ignorable="d"
+        Title="Home2" Height="768" Width="1024">
+    <Grid>
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBox Name="SearchBar"
+            TextWrapping="NoWrap"
+            Margin="0,0,10,0"
+            Text="Enter a location ..."
+            TextAlignment="Left"
+            Width="500"
+            FontSize="32" FontStyle="Italic"
+            MouseEnter="TextBox_MouseEnter" MouseLeave="TextBox_MouseLeave">
+        </TextBox>
+        <Button
+            Content="Go"
+            Click="Button_Click"
+            Margin="0,0,10,0"
+            HorizontalAlignment="Center" VerticalAlignment="Center"
+            Width="60" Height="60"
+            FontSize="32" FontWeight="Bold"/>
+        <Button Height="60" Width="60" Click="Location_Button_Click">
+            <StackPanel>
+                <Image Source="pack://application:,,,/Resources/gps.png"></Image>
+            </StackPanel>
+        </Button>
+    </StackPanel>
+    <Button Margin="0,150,0,0" VerticalAlignment="Center" Width="200" Height="40" Content="Use previous search" FontSize="20"></Button>
+    </Grid>
+</Window>
