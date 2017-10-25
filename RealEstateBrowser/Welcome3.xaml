@@ -5,49 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RealEstateBrowser"
         mc:Ignorable="d"
-        Title="Welcome3" Height="350" Width="525">
+        Title="Welcome3" Height="768" Width="1024">
     <Grid>
-        <Rectangle Fill="#FFF4F4F5" Margin="73,47" Stroke="Black"/>
-        <TextBlock Margin="216,111,216,0" TextWrapping="Wrap" Text="Let's get started" VerticalAlignment="Top" RenderTransformOrigin="0.235,-3.125" TextAlignment="Center"/>
-        <TextBlock Margin="208,80,209,0" TextWrapping="Wrap" Text="Welcome!" VerticalAlignment="Top" FontSize="20" TextAlignment="Center"/>
-        <ComboBox Margin="192,190,193,0" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBoxItem Content="House" HorizontalAlignment="Left" Width="130"/>
-            <ComboBoxItem Content="Apartment" HorizontalAlignment="Left" Width="130"/>
-            <ComboBoxItem Content="Condo" HorizontalAlignment="Left" Width="130"/>
-        </ComboBox>
-        <TextBlock Margin="149,160,149,0" TextWrapping="Wrap" Text="What is your budget?" VerticalAlignment="Top" TextAlignment="Center"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="15" Margin="220,234,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-        </Ellipse>
-        <Ellipse Fill="White" Height="15" Width="15" Margin="251,234,251,0" Stroke="Black" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-        </Ellipse>
-        <Ellipse Fill="Black" Height="15" Width="15" Margin="282,234,220,0" Stroke="Black" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-        </Ellipse>
-        <Button Content="Next" HorizontalAlignment="Left" Margin="340,230,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="110,230,0,0" VerticalAlignment="Top" Width="75"/>
-
+        <Rectangle Fill="#FFF4F4F5" Margin="140,140,140,140" Stroke="Black"/>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="0,200,0,0">
+            <TextBlock TextWrapping="Wrap" Text="Welcome!" FontSize="50" TextAlignment="Center"/>
+            <TextBlock TextWrapping="NoWrap" Text="Let's get started" FontSize="24" TextAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="0,0,0,0">
+            <TextBlock Margin="0,0,0,20" TextWrapping="NoWrap" Text="What is your budget?" FontSize="16" TextAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBox Width="100"></TextBox>
+                <TextBlock Margin="10,0,10,0" TextWrapping="NoWrap" Text="to" FontSize="16" TextAlignment="Center"/>
+                <TextBox Width="100"></TextBox>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,230">
+            <Button Content="Next" Width="75" Margin="0,0,30,0" FontSize="16"/>
+            <Ellipse Fill="#FFF4F4F5" Height="15" Stroke="Black" Width="15" Margin="0,0,10,0"></Ellipse>
+            <Ellipse Fill="#FFF4F4F5" Height="15" Stroke="Black" Width="15" Margin="0,0,10,0"></Ellipse>
+            <Ellipse Fill="#FF010113" Height="15" Stroke="Black" Width="15" Margin="0,0,30,0"></Ellipse>
+            <Button Content="Back" Width="75" FontSize="16"/>
+        </StackPanel>
+        <TextBlock Margin="0,0,0,170" VerticalAlignment="Bottom" TextWrapping="Wrap" Text="Skip to advanced search" FontSize="14" TextAlignment="Center" Foreground="#FF2E8BAE"/>
     </Grid>
 </Window>

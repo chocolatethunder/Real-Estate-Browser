@@ -26,7 +26,13 @@ namespace RealEstateBrowser
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            Window welcome1 = new Welcome1();
+            welcome1.Activate(); 
+        }
+
+        private void Location_Button_Click(object sender, RoutedEventArgs e)
+        {
+           
         }
 
         private void TextBox_MouseEnter(object sender, MouseEventArgs e)

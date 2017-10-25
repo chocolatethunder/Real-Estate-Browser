@@ -5,55 +5,62 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RealEstateBrowser"
         mc:Ignorable="d"
-        Title="Welcome2" Height="350" Width="525">
+        Title="Welcome2" Height="768" Width="1024">
     <Grid>
-        <Rectangle Fill="#FFF4F4F5" Margin="73,47" Stroke="Black"/>
-        <TextBlock Margin="216,111,216,0" TextWrapping="Wrap" Text="Let's get started" VerticalAlignment="Top" RenderTransformOrigin="0.235,-3.125" TextAlignment="Center"/>
-        <TextBlock Margin="208,80,209,0" TextWrapping="Wrap" Text="Welcome!" VerticalAlignment="Top" FontSize="20" TextAlignment="Center"/>
-        <ComboBox Margin="113,169,284,0" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBoxItem Content="House" HorizontalAlignment="Left" Width="130"/>
-            <ComboBoxItem Content="Apartment" HorizontalAlignment="Left" Width="130"/>
-            <ComboBoxItem Content="Condo" HorizontalAlignment="Left" Width="130"/>
-        </ComboBox>
-        <TextBlock Margin="65,145,233,0" TextWrapping="Wrap" Text="How many bedrooms?" VerticalAlignment="Top" TextAlignment="Center"/>
-        <Ellipse Fill="White" HorizontalAlignment="Left" Height="15" Margin="220,234,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-        </Ellipse>
-        <Ellipse Fill="#FF010113" Height="15" Width="15" Margin="251,234,251,0" Stroke="Black" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-        </Ellipse>
-        <Ellipse Fill="#FFF4F4F5" Height="15" Width="15" Margin="282,234,220,0" Stroke="Black" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-        </Ellipse>
-        <Button Content="Next" HorizontalAlignment="Left" Margin="340,230,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="110,230,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBlock Margin="240,145,58,0" TextWrapping="Wrap" Text="How many bathrooms?" VerticalAlignment="Top" TextAlignment="Center"/>
-        <ComboBox Margin="292,169,105,0" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBoxItem Content="House" HorizontalAlignment="Left" Width="130"/>
-            <ComboBoxItem Content="Apartment" HorizontalAlignment="Left" Width="130"/>
-            <ComboBoxItem Content="Condo" HorizontalAlignment="Left" Width="130"/>
-        </ComboBox>
-
+        <Rectangle Fill="#FFF4F4F5" Margin="140,140,140,140" Stroke="Black"/>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="0,200,0,0">
+            <TextBlock TextWrapping="Wrap" Text="Welcome!" FontSize="50" TextAlignment="Center"/>
+            <TextBlock TextWrapping="NoWrap" Text="Let's get started" FontSize="24" TextAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20,0,0">
+            <StackPanel Orientation="Vertical" Margin="0,0,50,0">
+                <TextBlock Margin="0,0,0,10" TextWrapping="NoWrap" Text="How many bedrooms?" FontSize="16" TextAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <ComboBox Width="50" Height="30" SelectionChanged="ComboBox_SelectionChanged">
+                        <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="4" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="5+" HorizontalAlignment="Left" Width="50"/>
+                    </ComboBox>
+                    <TextBlock Margin="10,0,10,0" TextWrapping="NoWrap" Text="to" FontSize="16" TextAlignment="Center"/>
+                    <ComboBox Width="50" Height="30" SelectionChanged="ComboBox_SelectionChanged">
+                        <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="4" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="5+" HorizontalAlignment="Left" Width="50"/>
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+                <TextBlock Margin="0,0,0,10" TextWrapping="NoWrap" Text="How many bathrooms?" FontSize="16" TextAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <ComboBox Width="50" Height="30" SelectionChanged="ComboBox_SelectionChanged">
+                        <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="4" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="5+" HorizontalAlignment="Left" Width="50"/>
+                    </ComboBox>
+                    <TextBlock Margin="10,0,10,0" TextWrapping="NoWrap" Text="to" FontSize="16" TextAlignment="Center"/>
+                    <ComboBox Width="50" Height="30" SelectionChanged="ComboBox_SelectionChanged">
+                        <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="4" HorizontalAlignment="Left" Width="50"/>
+                        <ComboBoxItem Content="5+" HorizontalAlignment="Left" Width="50"/>
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,230">
+            <Button Content="Back" Width="75" Height="30" Margin="0,0,30,0" FontSize="16"/>
+            <Ellipse Fill="#FFF4F4F5" Height="15" Stroke="Black" Width="15" Margin="0,0,10,0"></Ellipse>
+            <Ellipse Fill="#FF010113" Height="15" Stroke="Black" Width="15" Margin="0,0,10,0"></Ellipse>
+            <Ellipse Fill="#FFF4F4F5" Height="15" Stroke="Black" Width="15" Margin="0,0,30,0"></Ellipse>
+            <Button Content="Next" Width="75" Height="30" FontSize="16"/>
+        </StackPanel>
+        <TextBlock Margin="0,0,0,170" VerticalAlignment="Bottom" TextWrapping="Wrap" Text="Skip to advanced search" FontSize="14" TextAlignment="Center" Foreground="#FF2E8BAE"/>
     </Grid>
 </Window>
