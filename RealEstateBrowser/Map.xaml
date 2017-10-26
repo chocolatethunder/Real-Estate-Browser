@@ -17,7 +17,7 @@
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Left" VerticalAlignment="Bottom"
                         Margin="30,0,0,60">
-                <Button Width="60" Height="60">
+                <Button Name="BedButton" Width="60" Height="60" Click="Show_Bed_Popup">
                     <StackPanel>
                         <Image Source="pack://application:,,,/Resources/BedRect.png"></Image>
                     </StackPanel>
@@ -48,6 +48,14 @@
                     </StackPanel>
                 </Button>
             </StackPanel>
+            <Popup Name="BedPopup"
+                   PlacementTarget="{Binding ElementName=BedButton}" Placement="Top"
+                   HorizontalOffset="0" VerticalOffset="-10">
+                <StackPanel Background="PaleGreen" Width="200">
+                    <Label HorizontalAlignment="Center">Click to hide</Label>
+                    <Button Click="Hide_Bed_Popup" Margin="10">Hide</Button>
+                </StackPanel>
+            </Popup>
         </m:Map>
     </Grid>
 </UserControl>

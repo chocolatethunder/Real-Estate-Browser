@@ -4,6 +4,8 @@ using System.Windows.Controls;
 using System.Globalization;
 using Microsoft.Maps.MapControl.WPF;
 using Microsoft.Maps.MapControl.WPF.Design;
+using System.Windows.Controls.Primitives;
+using System.Windows.Media;
 
 namespace RealEstateBrowser
 {
@@ -67,6 +69,16 @@ namespace RealEstateBrowser
         private void Home_Button_Click(object sender, RoutedEventArgs e)
         {
             Switcher.Switch(new Home2());
+        }
+
+        private void Show_Bed_Popup(object sender, RoutedEventArgs e)
+        {
+            BedPopup.IsOpen = true;
+        }
+
+        private void Hide_Bed_Popup(object sender, RoutedEventArgs e)
+        {
+            BedPopup.IsOpen = false;
         }
     }
 }
