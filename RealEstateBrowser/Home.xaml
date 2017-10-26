@@ -1,11 +1,11 @@
-﻿<Window x:Class="RealEstateBrowser.Home"
+﻿<UserControl x:Class="RealEstateBrowser.Home"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RealEstateBrowser"
         mc:Ignorable="d"
-        Title="Home" Height="768" Width="1024">
+        Height="768" Width="1024">
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
         <TextBox Name="SearchBar"
             TextWrapping="NoWrap"
@@ -29,4 +29,4 @@
             </StackPanel>
         </Button>
     </StackPanel>
-</Window>
+</UserControl>

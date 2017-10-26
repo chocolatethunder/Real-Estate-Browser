@@ -18,7 +18,7 @@ namespace RealEstateBrowser
     /// <summary>
     /// Interaction logic for Welcome2.xaml
     /// </summary>
-    public partial class Welcome2 : Window
+    public partial class Welcome2 : UserControl
     {
         public Welcome2()
         {
@@ -27,28 +27,17 @@ namespace RealEstateBrowser
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Welcome1 welcome1 = new Welcome1();
-            App.Current.MainWindow = welcome1;
-            welcome1.Show();
-            this.Close();
+            
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            Welcome1 welcome1 = new Welcome1();
-            App.Current.MainWindow = welcome1;
-            welcome1.WindowState = WindowState.Maximized;
-            welcome1.Show();
-            this.Close();
+            Switcher.Switch(new Welcome1());
         }
 
         private void Next_Click(object sender, RoutedEventArgs e)
         {
-            Welcome3 welcome3 = new Welcome3();
-            App.Current.MainWindow = welcome3;
-            welcome3.WindowState = WindowState.Maximized;
-            welcome3.Show();
-            this.Close();
+            Switcher.Switch(new Welcome3());
         }
     }
 }

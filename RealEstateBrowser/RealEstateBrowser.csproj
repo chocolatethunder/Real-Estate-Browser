@@ -67,11 +67,13 @@
     <Compile Include="Home2.xaml.cs">
       <DependentUpon>Home2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LocationToVisibilityConverter.cs" />
     <Compile Include="Map.xaml.cs">
       <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
-    <Compile Include="OutlinedText.cs" />
+    <Compile Include="REB.xaml.cs">
+      <DependentUpon>REB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Switcher.cs" />
     <Compile Include="Welcome2.xaml.cs">
       <DependentUpon>Welcome2.xaml</DependentUpon>
     </Compile>
@@ -87,6 +89,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Map.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="REB.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -26,3 +26,5 @@ C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\bin\De
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\RealEstateBrowser.csprojResolveAssemblyReference.cache
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\Map.baml
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\Map.g.cs
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\REB.g.cs
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\REB.baml

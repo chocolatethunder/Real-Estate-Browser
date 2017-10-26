@@ -17,7 +17,7 @@ namespace RealEstateBrowser
     /// <summary>
     /// Interaction logic for Home2.xaml
     /// </summary>
-    public partial class Home2 : Window
+    public partial class Home2 : UserControl
     {
         public Home2()
         {
@@ -26,10 +26,7 @@ namespace RealEstateBrowser
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Welcome1 welcome1 = new Welcome1();
-            App.Current.MainWindow = welcome1;
-            this.Close();
-            welcome1.Show();
+            Switcher.Switch(new Welcome1());
         }
 
         private void Location_Button_Click(object sender, RoutedEventArgs e)

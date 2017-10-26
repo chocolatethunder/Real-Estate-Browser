@@ -17,21 +17,16 @@ namespace RealEstateBrowser
     /// <summary>
     /// Interaction logic for Home.xaml
     /// </summary>
-    public partial class Home : Window
+    public partial class Home : UserControl
     {
         public Home()
         {
             InitializeComponent();
-            App.Current.MainWindow.WindowState = WindowState.Maximized;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Welcome1 welcome1 = new Welcome1();
-            App.Current.MainWindow = welcome1;
-            welcome1.WindowState = WindowState.Maximized;
-            welcome1.Show();
-            this.Close();
+            Switcher.Switch(new Welcome1());
         }
 
         private void Location_Button_Click(object sender, RoutedEventArgs e)

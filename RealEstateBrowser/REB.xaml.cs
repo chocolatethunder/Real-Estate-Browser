@@ -10,34 +10,26 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace RealEstateBrowser
 {
     /// <summary>
-    /// Interaction logic for Welcome1.xaml
+    /// Interaction logic for RealEstateBrowser.xaml
     /// </summary>
-    public partial class Welcome1 : UserControl
+    public partial class REB : Window
     {
-        public Welcome1()
+        public REB()
         {
             InitializeComponent();
-        }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
+            App.Current.MainWindow.WindowState = WindowState.Maximized;
+            Switcher.pageSwitcher = this;
             Switcher.Switch(new Home());
         }
 
-        private void Next_Click(object sender, RoutedEventArgs e)
+        public void Navigate(UserControl nextPage)
         {
-            Switcher.Switch(new Welcome2());
+            this.Content = nextPage;
         }
     }
 }

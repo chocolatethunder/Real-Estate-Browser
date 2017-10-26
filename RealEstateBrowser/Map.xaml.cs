@@ -7,7 +7,7 @@ using Microsoft.Maps.MapControl.WPF.Design;
 
 namespace RealEstateBrowser
 {
-    public partial class SwitchMapViews : Window
+    public partial class SwitchMapViews : UserControl
     {
         LocationConverter locConverter = new LocationConverter();
 
