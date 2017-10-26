@@ -34,10 +34,10 @@ namespace RealEstateBrowser
 
                 // Updates the latitude and longitude values, in real time,
                 // as the map animates to the new location.
-                txtLatitude.Text = string.Format(CultureInfo.InvariantCulture,
-                  "{0:F5}", mapCenter.Latitude);
-                txtLongitude.Text = string.Format(CultureInfo.InvariantCulture,
-                    "{0:F5}", mapCenter.Longitude);
+                //txtLatitude.Text = string.Format(CultureInfo.InvariantCulture,
+                //  "{0:F5}", mapCenter.Latitude);
+                //txtLongitude.Text = string.Format(CultureInfo.InvariantCulture,
+                //    "{0:F5}", mapCenter.Longitude);
             }
         }
 
@@ -62,6 +62,11 @@ namespace RealEstateBrowser
                 AnimationLevel newLevel = (AnimationLevel)Enum.Parse(typeof(AnimationLevel), v, true);
                 myMap.AnimationLevel = newLevel;
             }
+        }
+
+        private void Home_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new Home2());
         }
     }
 }

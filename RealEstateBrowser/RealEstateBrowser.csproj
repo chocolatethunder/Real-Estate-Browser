@@ -145,9 +145,21 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Resource Include="Resources\gps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\BedRect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\BathRect.png" />
+    <Resource Include="Resources\CompareRect.png" />
+    <Resource Include="Resources\HeartRect.png" />
+    <Resource Include="Resources\HouseTypeRect.png" />
+    <Resource Include="Resources\SettingsRect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\HomeIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

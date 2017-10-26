@@ -31,7 +31,7 @@ namespace RealEstateBrowser
 
         private void Location_Button_Click(object sender, RoutedEventArgs e)
         {
-           
+            Switcher.Switch(new SwitchMapViews());
         }
 
         private void TextBox_MouseEnter(object sender, MouseEventArgs e)
