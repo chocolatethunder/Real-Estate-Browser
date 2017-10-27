@@ -73,6 +73,9 @@
     <Compile Include="Map.xaml.cs">
       <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PropertyModal.xaml.cs">
+      <DependentUpon>PropertyModal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="REB.xaml.cs">
       <DependentUpon>REB.xaml</DependentUpon>
     </Compile>
@@ -96,6 +99,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Map.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PropertyModal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -167,6 +174,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\HomeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PinMediumCost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PinLowCost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PinHighCost.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

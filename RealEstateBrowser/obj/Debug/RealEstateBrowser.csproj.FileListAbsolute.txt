@@ -30,3 +30,5 @@ C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\De
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\REB.baml
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\FavouritesModal.g.cs
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\FavouritesModal.baml
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\PropertyModal.g.cs
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\PropertyModal.baml

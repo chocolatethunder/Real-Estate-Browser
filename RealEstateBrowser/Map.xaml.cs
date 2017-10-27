@@ -112,7 +112,25 @@ namespace RealEstateBrowser
             // Show window modally  NOTE: Returns only when window is closed
             Nullable<bool> dialogResult = favouritesModal.ShowDialog();
         }
-        
+
+        private void Pin_Click(object sender, RoutedEventArgs e)
+        {
+            PropertyModal propertyModal = new PropertyModal();
+            propertyModal.Top = (System.Windows.SystemParameters.PrimaryScreenHeight - propertyModal.Height) / 2;
+            propertyModal.Left = (System.Windows.SystemParameters.PrimaryScreenWidth - propertyModal.Width) / 2;
+            Nullable<bool> dialogResult = propertyModal.ShowDialog();
+        }
+
+        private void Show_Pin_Popup(object sender, RoutedEventArgs e)
+        {
+            PinPopup.IsOpen = true;
+        }
+
+        private void Hide_Pin_Popup(object sender, RoutedEventArgs e)
+        {
+            PinPopup.IsOpen = false;
+        }
+
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 

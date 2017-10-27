@@ -7,6 +7,32 @@
         <m:Map x:Name="myMap" CredentialsProvider="V2kFRDvqWZA4pjiFc2LP~LmH_e_4YsfwRsT6Q1YaK0w~AqSXPJJcR4Z-hZFMqvlc9eBDs4765iD2FzA8KL77T4T6bhwVDY7x2NmEqsRgnSq0" 
                Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Padding="5"               
                Center="51.0486,-114.0708,0.0000" ZoomLevel="11.000" AnimationLevel="None" Mode="Road">
+
+            <Button Name="Pin1" Height="60" Width="40" Margin="0,0,100,0"
+                    Click="Pin_Click" MouseEnter="Show_Pin_Popup">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image Source="pack://application:,,,/Resources/PinLowCost.png"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Name="Pin2" Height="60" Width="40" Margin="0,0,0,0"
+                    Click="Pin_Click" MouseEnter="Show_Pin_Popup">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image Source="pack://application:,,,/Resources/PinMediumCost.png"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Name="Pin3" Height="60" Width="40" Margin="0,0,-100,0"
+                    Click="Pin_Click" MouseEnter="Show_Pin_Popup">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image Source="pack://application:,,,/Resources/PinHighCost.png"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" 
                     Background="Transparent" BorderBrush="Transparent"
                     Height="81" Width="80" Click="Home_Button_Click">
@@ -50,7 +76,8 @@
             </StackPanel>
             <Popup Name="BedPopup"
                    PlacementTarget="{Binding ElementName=BedButton}" Placement="Top"
-                   HorizontalOffset="0" VerticalOffset="-10">
+                   HorizontalOffset="0" VerticalOffset="-10"
+                   MouseLeave="Hide_Bed_Popup">
                 <Border BorderBrush="Black" BorderThickness="2">
                     <StackPanel Orientation="Horizontal" 
                     Background="White" Width="350" Height="60">
@@ -76,7 +103,8 @@
             </Popup>
             <Popup Name="BathPopup"
                    PlacementTarget="{Binding ElementName=BathButton}" Placement="Top"
-                   HorizontalOffset="0" VerticalOffset="-10">
+                   HorizontalOffset="0" VerticalOffset="-10"
+                   MouseLeave="Hide_Bath_Popup">
                 <Border BorderBrush="Black" BorderThickness="2">
                     <StackPanel Orientation="Horizontal" 
                     Background="White" Width="350" Height="60">
@@ -102,7 +130,8 @@
             </Popup>
             <Popup Name="PropertyTypePopup"
                    PlacementTarget="{Binding ElementName=PropertyTypeButton}" Placement="Top"
-                   HorizontalOffset="0" VerticalOffset="-10">
+                   HorizontalOffset="0" VerticalOffset="-10"
+                   MouseLeave="Hide_PropertyType_Popup">
                 <Border BorderBrush="Black" BorderThickness="2">
                     <StackPanel Orientation="Horizontal" 
                     Background="White" Width="330" Height="60">
@@ -114,6 +143,23 @@
                         </ComboBox>
                         <Button FontSize="16" Height="35" Width="60" Click="Hide_PropertyType_Popup" Margin="15,5,0,5">Update</Button>
                     </StackPanel>
+                </Border>
+            </Popup>
+
+            <Popup Name="PinPopup"
+                   Placement="Mouse"
+                   HorizontalOffset="-180" VerticalOffset="-400"
+                   MouseLeave="Hide_Pin_Popup">
+                <Border BorderBrush="Black" BorderThickness="2">
+                    <Grid Background="White" Width="400" Height="300">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center"
+                               FontSize="20" Margin="0,0,0,100">
+                            Pin Modal
+                        </Label>
+                        <Button FontSize="16" Height="30" Width="30"
+                                Click="Hide_Pin_Popup"
+                                Margin="0,0,-370,270">X</Button>
+                    </Grid>
                 </Border>
             </Popup>
         </m:Map>
