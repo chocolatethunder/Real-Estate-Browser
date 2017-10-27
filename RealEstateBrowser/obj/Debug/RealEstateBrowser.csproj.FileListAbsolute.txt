@@ -28,3 +28,5 @@ C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\De
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\Map.g.cs
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\REB.g.cs
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\REB.baml
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\FavouritesModal.g.cs
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\FavouritesModal.baml

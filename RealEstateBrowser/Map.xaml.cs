@@ -6,6 +6,7 @@ using Microsoft.Maps.MapControl.WPF;
 using Microsoft.Maps.MapControl.WPF.Design;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
+using System.Diagnostics;
 
 namespace RealEstateBrowser
 {
@@ -101,6 +102,17 @@ namespace RealEstateBrowser
             PropertyTypePopup.IsOpen = false;
         }
 
+        private void Show_Favourites(object sender, RoutedEventArgs e)
+        {
+            // Instantiate window
+            FavouritesModal favouritesModal = new FavouritesModal();
+            // Center it:
+            favouritesModal.Top = (System.Windows.SystemParameters.PrimaryScreenHeight - favouritesModal.Height) / 2;
+            favouritesModal.Left = (System.Windows.SystemParameters.PrimaryScreenWidth - favouritesModal.Width) / 2;
+            // Show window modally  NOTE: Returns only when window is closed
+            Nullable<bool> dialogResult = favouritesModal.ShowDialog();
+        }
+        
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
