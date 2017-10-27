@@ -76,9 +76,34 @@ namespace RealEstateBrowser
             BedPopup.IsOpen = true;
         }
 
+        private void Hide_Bath_Popup(object sender, RoutedEventArgs e)
+        {
+            BathPopup.IsOpen = false;
+        }
+
+        private void Show_Bath_Popup(object sender, RoutedEventArgs e)
+        {
+            BathPopup.IsOpen = true;
+        }
+
         private void Hide_Bed_Popup(object sender, RoutedEventArgs e)
         {
             BedPopup.IsOpen = false;
+        }
+
+        private void Show_PropertyType_Popup(object sender, RoutedEventArgs e)
+        {
+            PropertyTypePopup.IsOpen = true;
+        }
+
+        private void Hide_PropertyType_Popup(object sender, RoutedEventArgs e)
+        {
+            PropertyTypePopup.IsOpen = false;
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

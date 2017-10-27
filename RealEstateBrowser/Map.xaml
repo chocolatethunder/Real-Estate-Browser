@@ -22,12 +22,12 @@
                         <Image Source="pack://application:,,,/Resources/BedRect.png"></Image>
                     </StackPanel>
                 </Button>
-                <Button Width="60" Height="60">
+                <Button Name="BathButton" Width="60" Height="60" Click="Show_Bath_Popup">
                     <StackPanel>
                         <Image Source="pack://application:,,,/Resources/BathRect.png"></Image>
                     </StackPanel>
                 </Button>
-                <Button Width="60" Height="60">
+                <Button Name="PropertyTypeButton" Width="60" Height="60" Click="Show_PropertyType_Popup">
                     <StackPanel>
                         <Image Source="pack://application:,,,/Resources/HouseTypeRect.png"></Image>
                     </StackPanel>
@@ -51,10 +51,70 @@
             <Popup Name="BedPopup"
                    PlacementTarget="{Binding ElementName=BedButton}" Placement="Top"
                    HorizontalOffset="0" VerticalOffset="-10">
-                <StackPanel Background="PaleGreen" Width="200">
-                    <Label HorizontalAlignment="Center">Click to hide</Label>
-                    <Button Click="Hide_Bed_Popup" Margin="10">Hide</Button>
-                </StackPanel>
+                <Border BorderBrush="Black" BorderThickness="2">
+                    <StackPanel Orientation="Horizontal" 
+                    Background="White" Width="350" Height="60">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Margin="10,0,10,0"># of Beds:</Label>
+                        <ComboBox Width="50" Height="30" SelectionChanged="ComboBox_SelectionChanged">
+                            <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="4" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="5+" HorizontalAlignment="Left" Width="50"/>
+                        </ComboBox>
+                        <TextBlock Margin="10,0,10,0" TextWrapping="NoWrap" Text="to" FontSize="16" TextAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBox Width="50" Height="30" SelectionChanged="ComboBox_SelectionChanged">
+                            <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="4" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="5+" HorizontalAlignment="Left" Width="50"/>
+                        </ComboBox>
+                        <Button FontSize="16" Height="35" Width="60" Click="Hide_Bed_Popup" Margin="20,5,0,5">Update</Button>
+                    </StackPanel>
+                </Border>
+            </Popup>
+            <Popup Name="BathPopup"
+                   PlacementTarget="{Binding ElementName=BathButton}" Placement="Top"
+                   HorizontalOffset="0" VerticalOffset="-10">
+                <Border BorderBrush="Black" BorderThickness="2">
+                    <StackPanel Orientation="Horizontal" 
+                    Background="White" Width="350" Height="60">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Margin="10,0,10,0"># of Baths:</Label>
+                        <ComboBox Width="50" Height="30" SelectionChanged="ComboBox_SelectionChanged">
+                            <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="4" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="5+" HorizontalAlignment="Left" Width="50"/>
+                        </ComboBox>
+                        <TextBlock Margin="10,0,10,0" TextWrapping="NoWrap" Text="to" FontSize="16" TextAlignment="Center" VerticalAlignment="Center"/>
+                        <ComboBox Width="50" Height="30" SelectionChanged="ComboBox_SelectionChanged">
+                            <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="4" HorizontalAlignment="Left" Width="50"/>
+                            <ComboBoxItem Content="5+" HorizontalAlignment="Left" Width="50"/>
+                        </ComboBox>
+                        <Button FontSize="16" Height="35" Width="60" Click="Hide_Bath_Popup" Margin="20,5,0,5">Update</Button>
+                    </StackPanel>
+                </Border>
+            </Popup>
+            <Popup Name="PropertyTypePopup"
+                   PlacementTarget="{Binding ElementName=PropertyTypeButton}" Placement="Top"
+                   HorizontalOffset="0" VerticalOffset="-10">
+                <Border BorderBrush="Black" BorderThickness="2">
+                    <StackPanel Orientation="Horizontal" 
+                    Background="White" Width="330" Height="60">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Margin="10,0,10,0">Property Type:</Label>
+                        <ComboBox Width="80" Height="30" SelectionChanged="ComboBox_SelectionChanged">
+                            <ComboBoxItem Content="House" HorizontalAlignment="Left" Width="70"/>
+                            <ComboBoxItem Content="Apartment" HorizontalAlignment="Left" Width="70"/>
+                            <ComboBoxItem Content="Condo" HorizontalAlignment="Left" Width="70"/>
+                        </ComboBox>
+                        <Button FontSize="16" Height="35" Width="60" Click="Hide_PropertyType_Popup" Margin="15,5,0,5">Update</Button>
+                    </StackPanel>
+                </Border>
             </Popup>
         </m:Map>
     </Grid>
