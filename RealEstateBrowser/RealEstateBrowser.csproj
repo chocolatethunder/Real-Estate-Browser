@@ -184,5 +184,17 @@
   <ItemGroup>
     <Resource Include="Resources\PinHighCost.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\condo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\apartment.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\house.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cozy_house.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

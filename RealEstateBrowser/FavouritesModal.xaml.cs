@@ -26,5 +26,13 @@ namespace RealEstateBrowser
             this.Height = System.Windows.SystemParameters.PrimaryScreenHeight * 0.9;
             this.Width = System.Windows.SystemParameters.PrimaryScreenWidth * 0.9;
         }
+
+        private void Show_Property(object sender, MouseButtonEventArgs e)
+        {
+            PropertyModal propertyModal = new PropertyModal();
+            propertyModal.Top = (System.Windows.SystemParameters.PrimaryScreenHeight - propertyModal.Height) / 2;
+            propertyModal.Left = (System.Windows.SystemParameters.PrimaryScreenWidth - propertyModal.Width) / 2;
+            Nullable<bool> dialogResult = propertyModal.ShowDialog();
+        }
     }
 }
