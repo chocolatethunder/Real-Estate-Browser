@@ -7,6 +7,53 @@
         mc:Ignorable="d"
         Title="Favourites" Height="768" Width="1024">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,642.5" TextWrapping="Wrap" Text="Favorites" 
+                   FontSize="50" TextAlignment="Center" Width="1019" Height="88"/>
+
+        <Image HorizontalAlignment="Left" Height="113" Margin="100,190,0,0" VerticalAlignment="Top" 
+               Width="170" Source="C:\Users\Lames\Documents\481-Project\Real-Estate-Browser\RealEstateBrowser\Resources\house.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="275,190,0,0" TextWrapping="Wrap" Text="Beautiful House"  
+                   VerticalAlignment="Top" Height="50" Width="176" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="275,229,0,0" TextWrapping="Wrap" Text="$500,000" 
+                   VerticalAlignment="Top" Height="35" Width="108" FontSize="15"/>
+        <Image HorizontalAlignment="Left" Height="49" Margin="270,245,0,0" VerticalAlignment="Top" 
+               Width="50" Source="C:\Users\Lames\Documents\481-Project\Real-Estate-Browser\RealEstateBrowser\Resources\BedRect.png"/>
+        <Image HorizontalAlignment="Left" Height="49" Margin="333,245,0,0" VerticalAlignment="Top" Width="50"
+               Source="C:\Users\Lames\Documents\481-Project\Real-Estate-Browser\RealEstateBrowser\Resources\BathRect.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="320,257,0,0" TextWrapping="Wrap" Text="5" 
+                   VerticalAlignment="Top" Height="35" Width="34" FontSize="15"/>
+        <TextBlock HorizontalAlignment="Left" Margin="383,255,0,0" TextWrapping="Wrap" Text="3" 
+                   VerticalAlignment="Top" Height="35" Width="34" FontSize="15"/>
+
+
+        <Image HorizontalAlignment="Left" Height="113" Margin="600,190,0,0" VerticalAlignment="Top" 
+               Width="170" Source="C:\Users\Lames\Documents\481-Project\Real-Estate-Browser\RealEstateBrowser\Resources\condo.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="780,190,0,0" TextWrapping="Wrap" Text="Amazing Condo"  
+                   VerticalAlignment="Top" Height="50" Width="176" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="780,229,0,0" TextWrapping="Wrap" Text="$200,000" 
+                   VerticalAlignment="Top" Height="35" Width="108" FontSize="15"/>
+        <Image HorizontalAlignment="Left" Height="49" Margin="774,247,0,0" VerticalAlignment="Top" 
+               Width="50" Source="C:\Users\Lames\Documents\481-Project\Real-Estate-Browser\RealEstateBrowser\Resources\BedRect.png"/>
+        <Image HorizontalAlignment="Left" Height="49" Margin="850,245,0,0" VerticalAlignment="Top" Width="50"
+               Source="C:\Users\Lames\Documents\481-Project\Real-Estate-Browser\RealEstateBrowser\Resources\BathRect.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="824,259,0,0" TextWrapping="Wrap" Text="2" 
+                   VerticalAlignment="Top" Height="35" Width="34" FontSize="15"/>
+        <TextBlock HorizontalAlignment="Left" Margin="900,259,0,0" TextWrapping="Wrap" Text="2" 
+                   VerticalAlignment="Top" Height="35" Width="34" FontSize="15"/>
+
+        <Image HorizontalAlignment="Left" Height="113" Margin="100,450,0,0" VerticalAlignment="Top" 
+               Width="170" Source="C:\Users\Lames\Documents\481-Project\Real-Estate-Browser\RealEstateBrowser\Resources\apartment.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="275,450,0,0" TextWrapping="Wrap" Text="Roomy Studio"  
+                   VerticalAlignment="Top" Height="50" Width="176" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="275,490,0,0" TextWrapping="Wrap" Text="$150,000" 
+                   VerticalAlignment="Top" Height="35" Width="108" FontSize="15"/>
+        <Image HorizontalAlignment="Left" Height="49" Margin="275,510,0,0" VerticalAlignment="Top" 
+               Width="50" Source="C:\Users\Lames\Documents\481-Project\Real-Estate-Browser\RealEstateBrowser\Resources\BedRect.png"/>
+        <Image HorizontalAlignment="Left" Height="49" Margin="336,509,0,0" VerticalAlignment="Top" Width="50"
+               Source="C:\Users\Lames\Documents\481-Project\Real-Estate-Browser\RealEstateBrowser\Resources\BathRect.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="322,519,0,0" TextWrapping="Wrap" Text="2" 
+                   VerticalAlignment="Top" Height="35" Width="34" FontSize="15"/>
+        <TextBlock HorizontalAlignment="Left" Margin="384,519,0,0" TextWrapping="Wrap" Text="2" 
+                   VerticalAlignment="Top" Height="35" Width="34" FontSize="15"/>
     </Grid>
 </Window>
