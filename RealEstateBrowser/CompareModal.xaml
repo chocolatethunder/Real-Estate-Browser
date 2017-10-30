@@ -1,0 +1,110 @@
+﻿<UserControl x:Class="RealEstateBrowser.CompareModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RealEstateBrowser"
+        mc:Ignorable="d"
+       Height="768" Width="1024">
+    <Grid Margin="0,0,0,0">
+
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top"
+                   Margin="100,26,0,0" TextWrapping="NoWrap" Text="Compare"
+                   FontSize="35" TextAlignment="Left" Height="72"/>
+
+        <Grid Margin ="12,124,0,44" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="1000">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="333"></ColumnDefinition>
+                <ColumnDefinition Width="333"></ColumnDefinition>
+                <ColumnDefinition Width="333"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Margin="1,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           TextWrapping="NoWrap" Text="Beautiful House          $500,000" FontSize="20" Margin="26,0,10,398" Width="297"/>
+                <Image HorizontalAlignment="Left" VerticalAlignment="Bottom"
+                       Width="211" Height="140"
+                       Margin="26,0,0,430" Stretch="Fill"
+                       Source="pack://application:,,,/Resources/house.jpg"/>
+                <Image Height="50" Width="50" Margin="26,0,257,343" Source="pack://application:,,,/Resources/HouseTypeRect.png" VerticalAlignment="Bottom"/>
+                <Image Height="50" Width="50" Margin="26,0,257,293" Source="pack://application:,,,/Resources/BedRect.png" RenderTransformOrigin="0.56,-0.41" VerticalAlignment="Bottom"/>
+                <Image Height="50" Width="50" Margin="26,0,257,243" Source="pack://application:,,,/Resources/BathRect.png" VerticalAlignment="Bottom"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           TextWrapping="NoWrap" Text="House" FontSize="20" Margin="82,0,195,358"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           TextWrapping="NoWrap" Text="5" FontSize="20" Margin="105,0,217,308"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           TextWrapping="NoWrap" Text="3" FontSize="20" Margin="105,0,217,258"/>
+                <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,10,0,0" 
+                    Background="Transparent" BorderBrush="Transparent"
+                    Height="35" Width="35" Click="RemovePropertyClick">
+                    <Button.Content>
+                        <Image Source="pack://application:,,,/Resources/removeProperty.png"></Image>
+                    </Button.Content>
+                </Button>
+
+            </Grid>
+            <Grid Grid.Column="1">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           TextWrapping="NoWrap" Text="Roomy Studio         $150,000" FontSize="20" Margin="26,0,18,398" Width="289"></TextBlock>
+                <Image HorizontalAlignment="Left" VerticalAlignment="Bottom"
+                       Width="211" Height="140"
+                       Margin="26,0,0,430" Stretch="Fill"
+                       Source="pack://application:,,,/Resources/apartment.jpg"></Image>
+                <Image Height="50" Width="50" Margin="26,0,257,343" Source="pack://application:,,,/Resources/HouseTypeRect.png" VerticalAlignment="Bottom"></Image>
+                <Image Height="50" Width="50" Margin="26,0,257,293" Source="pack://application:,,,/Resources/BedRect.png" RenderTransformOrigin="0.56,-0.41" VerticalAlignment="Bottom"></Image>
+                <Image Height="50" Width="50" Margin="26,0,257,243" Source="pack://application:,,,/Resources/BathRect.png" VerticalAlignment="Bottom"></Image>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           TextWrapping="NoWrap" Text="Studio" FontSize="20" Margin="82,0,195,358"></TextBlock>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           TextWrapping="NoWrap" Text="2" FontSize="20" Margin="105,0,217,308"></TextBlock>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           TextWrapping="NoWrap" Text="2" FontSize="20" Margin="105,0,217,258"></TextBlock>
+                <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,10,0,0" 
+                    Background="Transparent" BorderBrush="Transparent"
+                    Height="35" Width="35" Click="RemovePropertyClick">
+                    <Button.Content>
+                        <Image Source="pack://application:,,,/Resources/removeProperty.png"></Image>
+                    </Button.Content>
+                </Button>
+
+            </Grid>
+            <Grid Grid.Column="2">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           TextWrapping="NoWrap" Text="Amazing Condo        $200,000" FontSize="20" Margin="24,0,10,398" Width="299"></TextBlock>
+                <Image HorizontalAlignment="Left" VerticalAlignment="Bottom"
+                       Width="211" Height="140"
+                       Margin="26,0,0,430" Stretch="Fill"
+                       Source="pack://application:,,,/Resources/condo.jpg"></Image>
+                <Image Height="50" Width="50" Margin="26,0,257,343" Source="pack://application:,,,/Resources/HouseTypeRect.png" VerticalAlignment="Bottom"></Image>
+                <Image Height="50" Width="50" Margin="26,0,257,293" Source="pack://application:,,,/Resources/BedRect.png" RenderTransformOrigin="0.56,-0.41" VerticalAlignment="Bottom"></Image>
+                <Image Height="50" Width="50" Margin="26,0,257,243" Source="pack://application:,,,/Resources/BathRect.png" VerticalAlignment="Bottom"></Image>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           TextWrapping="NoWrap" Text="Condo" FontSize="20" Margin="81,0,193,358"></TextBlock>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           TextWrapping="NoWrap" Text="2" FontSize="20" Margin="105,0,217,308"></TextBlock>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           TextWrapping="NoWrap" Text="2" FontSize="20" Margin="105,0,217,258"></TextBlock>
+                <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,10,0,0" 
+                    Background="Transparent" BorderBrush="Transparent"
+                    Height="35" Width="35" Click="RemovePropertyClick">
+                    <Button.Content>
+                        <Image Source="pack://application:,,,/Resources/removeProperty.png"></Image>
+                    </Button.Content>
+                </Button>
+
+
+            </Grid>
+
+        </Grid>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,30,0,0" 
+                    Background="Transparent" BorderBrush="Transparent"
+                    Height="50" Width="50" Click="Back_Button_Click">
+            <Button.Content>
+                <Image Source="pack://application:,,,/Resources/backArrow.png"></Image>
+            </Button.Content>
+        </Button>
+    </Grid>
+</UserControl>

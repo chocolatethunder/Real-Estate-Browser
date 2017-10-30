@@ -26,5 +26,9 @@ namespace RealEstateBrowser
             this.Height = System.Windows.SystemParameters.PrimaryScreenHeight * 0.6;
             this.Width = System.Windows.SystemParameters.PrimaryScreenWidth * 0.6;
         }
+        private void AddToFavourites(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
