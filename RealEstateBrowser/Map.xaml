@@ -151,14 +151,39 @@
                    HorizontalOffset="-180" VerticalOffset="-400"
                    MouseLeave="Hide_Pin_Popup">
                 <Border BorderBrush="Black" BorderThickness="2">
-                    <Grid Background="White" Width="400" Height="300">
-                        <Label HorizontalAlignment="Center" VerticalAlignment="Center"
-                               FontSize="20" Margin="0,0,0,100">
-                            Pin Modal
-                        </Label>
+                    <Grid Background="White" Width="350" Height="250">
+                        <Grid Width="350" Height="200" VerticalAlignment="Top">
+                            <Image Source="pack://application:,,,/Resources/house.jpg" Stretch="Fill"></Image>
+                        </Grid>
                         <Button FontSize="16" Height="30" Width="30"
-                                Click="Hide_Pin_Popup"
-                                Margin="0,0,-370,270">X</Button>
+                            Background="White"
+                            VerticalAlignment="Top" HorizontalAlignment="Right"
+                            Click="Hide_Pin_Popup">X</Button>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Width="350" Height="50">
+                            <TextBlock FontSize="20" FontWeight="Bold"
+                                VerticalAlignment="Center"
+                                Margin="10,0,20,0">$200,000</TextBlock>
+                            <Image Height="50" Width="50" Margin="0,0,0,0"  
+                                Source="pack://application:,,,/Resources/BedRect.png"/>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
+                                TextWrapping="Wrap" Text="5" FontSize="15" 
+                                Height="20" Width="10"/>
+                            <Image Height="50" Width="50" Margin="0,0,0,0"  
+                                Source="pack://application:,,,/Resources/BathRect.png"/>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
+                                Margin="0,0,15,0" TextWrapping="Wrap" Text="3" 
+                                Height="20" Width="10" FontSize="15"/>
+                            <Button Background="Transparent" BorderBrush="Transparent">
+                                <Button.Content>
+                                    <Image Source="pack://application:,,,/Resources/unselectedHeart.png"/>
+                                </Button.Content>
+                            </Button>
+                            <Button Background="Transparent" BorderBrush="Transparent">
+                                <Button.Content>
+                                    <Image Source="pack://application:,,,/Resources/ComparisonCircle.png"></Image>
+                                </Button.Content>
+                            </Button>
+                        </StackPanel>
                     </Grid>
                 </Border>
             </Popup>
