@@ -19,12 +19,17 @@ namespace RealEstateBrowser
     /// </summary>
     public partial class PropertyModal : Window
     {
+        private double height;
+        private double width;
+
         public PropertyModal()
         {
             InitializeComponent();
-            // Instantiate modal window with dimensions = 60% of system resolution:
-            this.Height = System.Windows.SystemParameters.PrimaryScreenHeight * 0.6;
-            this.Width = System.Windows.SystemParameters.PrimaryScreenWidth * 0.6;
+            // Instantiate modal window with dimensions = 90% of system resolution:
+            height = System.Windows.SystemParameters.PrimaryScreenHeight * 0.9;
+            width = System.Windows.SystemParameters.PrimaryScreenWidth * 0.9;
+            this.Height = height;
+            this.Width = width;
         }
         private void AddToFavourites(object sender, RoutedEventArgs e)
         {

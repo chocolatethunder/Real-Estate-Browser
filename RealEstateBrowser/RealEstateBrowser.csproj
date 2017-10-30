@@ -61,6 +61,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CompareModal.xaml.cs">
+      <DependentUpon>CompareModal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FavouritesModal.xaml.cs">
       <DependentUpon>FavouritesModal.xaml</DependentUpon>
     </Compile>
@@ -86,6 +89,10 @@
     <Compile Include="Welcome3.xaml.cs">
       <DependentUpon>Welcome3.xaml</DependentUpon>
     </Compile>
+    <Page Include="CompareModal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="FavouritesModal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -195,6 +202,33 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\cozy_house.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\backArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\BathroomCircleIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\BedroomCircleIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ComparisonCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\HouseTypeCircleIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\removeProperty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\selectedHeart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\unselectedHeart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\HousePic.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -113,12 +113,25 @@ namespace RealEstateBrowser
             Nullable<bool> dialogResult = favouritesModal.ShowDialog();
         }
 
+        private void Show_Compare(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new CompareModal());
+            //CompareModal compareModal = new CompareModal();
+            // Center it:
+            //compareModal.Top = (System.Windows.SystemParameters.PrimaryScreenHeight - compareModal.Height) / 2;
+            //compareModal.Left = (System.Windows.SystemParameters.PrimaryScreenWidth - compareModal.Width) / 2;
+            // Show window modally  NOTE: Returns only when window is closed
+            //Nullable<bool> dialogResult = compareModal.ShowDialog();
+        }
+
         private void Pin_Click(object sender, RoutedEventArgs e)
         {
             PropertyModal propertyModal = new PropertyModal();
             propertyModal.Top = (System.Windows.SystemParameters.PrimaryScreenHeight - propertyModal.Height) / 2;
             propertyModal.Left = (System.Windows.SystemParameters.PrimaryScreenWidth - propertyModal.Width) / 2;
+            propertyModal.Topmost = true;
             Nullable<bool> dialogResult = propertyModal.ShowDialog();
+            e.Handled = true;
         }
 
         private void Show_Pin_Popup(object sender, RoutedEventArgs e)

@@ -63,7 +63,7 @@
                         <Image Source="pack://application:,,,/Resources/HeartRect.png"></Image>
                     </StackPanel>
                 </Button>
-                <Button Width="60" Height="60">
+                <Button Width="60" Height="60" Click="Show_Compare">
                     <StackPanel>
                         <Image Source="pack://application:,,,/Resources/CompareRect.png"></Image>
                     </StackPanel>

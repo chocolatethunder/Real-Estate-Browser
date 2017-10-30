@@ -7,18 +7,17 @@
         mc:Ignorable="d"
         Title="Property" Height="768" Width="1024">
     <Grid Margin="0,0,0,0">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="368"></RowDefinition>
-                <RowDefinition Height="400"></RowDefinition>
+        <Grid.RowDefinitions>
+            <RowDefinition Name="row1" Height="368"></RowDefinition>
+            <RowDefinition Name="row2"  Height="400"></RowDefinition>
+        </Grid.RowDefinitions>
 
-
-            </Grid.RowDefinitions>
-            <Grid Grid.Row="0">
-                <Image HorizontalAlignment="Left" VerticalAlignment="Top" Source="pack://application:,,,/Resources/HousePic.jpeg" Margin="0,-178,-508,-157" Height="703" Width="1557"/>
-            </Grid>
-
-            <Grid Grid.Row="1"  VerticalAlignment="Top" Margin="0,0" Background="White" Height="369">
+        <StackPanel Grid.Row="0">
+            <Image Source="pack://application:,,,/Resources/House.jpg"
+                   Height="368" Width="1024" Stretch="Uniform"/>
+        </StackPanel>
+        
+        <Grid Grid.Row="1"  VerticalAlignment="Top" Margin="0,0" Background="White">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="150"></RowDefinition>
                     <RowDefinition Height="250" ></RowDefinition>
@@ -27,7 +26,7 @@
                 <Grid Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Transparent" Width="1034">
 
                     <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Beautiful House" FontSize="35" Margin="126,3,0,0" FontWeight="Bold"/>
-                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Beatiful home near downtown Calgary" FontSize="20" Margin="171,55,0,0" FontStyle="Italic"/>
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Beautiful home near downtown Calgary" FontSize="20" Margin="171,55,0,0" FontStyle="Italic"/>
                     <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="$500,000" FontSize="35" Margin="785,25,0,0" FontWeight="Bold" FontFamily="Sitka Text" TextDecorations="{x:Null}" FontStyle="Italic"/>
 
                     <Button Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF3CDCFF" Content="Interested" FontSize="20"  Margin="10,24,0,0" Foreground="White" FontFamily="Arial" BorderBrush="White"/>
@@ -45,24 +44,15 @@
                             <Image Source="pack://application:,,,/Resources/ComparisonCircle.png"></Image>
                         </Button.Content>
                     </Button>
-                    <StackPanel></StackPanel>
-
-
                 </Grid>
-                <Grid Grid.Row="1" Background="Transparent">
-                    <Image Width="100" Height="100" Source="pack://application:,,,/Resources/BedroomCircleIcon.png" Margin="102,-61,814,211"></Image>
-                    <Image Width="100" Height="100" Source="pack://application:,,,/Resources/BathroomCircleIcon.png" Margin="232,-61,684,211"></Image>
-                    <Image Width="100" Height="100" Source="pack://application:,,,/Resources/HouseTypeCircleIcon.png" Margin="362,-61,540,211"></Image>
-                    <TextBlock Width="25" Height="50" Text="5" FontSize="30" Margin="128,44,834,156"></TextBlock>
-                    <TextBlock Width="25" Height="50" Text="3" FontSize="30" Margin="270,44,721,156" RenderTransformOrigin="1.28,0.62"></TextBlock>
-                    <TextBlock Width="100" Height="50" Text="House" FontSize="30" Margin="350,44,516,156"></TextBlock>
-                          
-                      </Grid>
-
-
+            <Grid Background="Transparent" Margin="0,148,0,2" Grid.RowSpan="2">
+                <Image Width="100" Height="100" Source="pack://application:,,,/Resources/BedroomCircleIcon.png" Margin="102,-61,814,211"></Image>
+                <Image Width="100" Height="100" Source="pack://application:,,,/Resources/BathroomCircleIcon.png" Margin="232,-61,684,211"></Image>
+                <Image Width="100" Height="100" Source="pack://application:,,,/Resources/HouseTypeCircleIcon.png" Margin="362,-61,540,211"></Image>
+                <TextBlock Width="25" Height="50" Text="5" FontSize="30" Margin="128,44,834,156"></TextBlock>
+                <TextBlock Width="25" Height="50" Text="3" FontSize="30" Margin="270,44,721,156" RenderTransformOrigin="1.28,0.62"></TextBlock>
+                <TextBlock Width="100" Height="50" Text="House" FontSize="30" Margin="350,44,516,156"></TextBlock>
             </Grid>
-
-
         </Grid>
     </Grid>
 </Window>

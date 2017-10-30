@@ -23,8 +23,8 @@ namespace RealEstateBrowser
         {
             InitializeComponent();
             // Instantiate modal window with dimensions = 90% of system resolution:
-            this.Height = System.Windows.SystemParameters.PrimaryScreenHeight * 0.9;
-            this.Width = System.Windows.SystemParameters.PrimaryScreenWidth * 0.9;
+            //this.Height = System.Windows.SystemParameters.PrimaryScreenHeight * 0.9;
+            //this.Width = System.Windows.SystemParameters.PrimaryScreenWidth * 0.9;
         }
         private void Back_Button_Click(object sender, RoutedEventArgs e)
         {
