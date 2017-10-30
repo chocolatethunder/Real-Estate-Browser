@@ -22,6 +22,8 @@ namespace RealEstateBrowser
         public AdvancedSearchModal()
         {
             InitializeComponent();
+            this.Height = System.Windows.SystemParameters.PrimaryScreenHeight * 0.9;
+            this.Width = System.Windows.SystemParameters.PrimaryScreenWidth * 0.9;
         }
 
         private void Refine_Click(object sender, RoutedEventArgs e)

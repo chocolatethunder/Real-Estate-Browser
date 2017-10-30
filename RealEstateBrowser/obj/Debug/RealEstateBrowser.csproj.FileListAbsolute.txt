@@ -34,3 +34,5 @@ C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\De
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\PropertyModal.baml
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\CompareModal.g.cs
 C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\CompareModal.baml
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\AdvancedSearchModal.g.cs
+C:\Users\Tyler Gillson\source\repos\Real-Estate-Browser\RealEstateBrowser\obj\Debug\AdvancedSearchModal.baml

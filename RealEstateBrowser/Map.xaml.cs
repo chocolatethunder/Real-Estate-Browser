@@ -102,6 +102,14 @@ namespace RealEstateBrowser
             PropertyTypePopup.IsOpen = false;
         }
 
+        private void Show_AdvancedSearch(object sender, RoutedEventArgs e)
+        {
+            AdvancedSearchModal advancedSearchModal = new AdvancedSearchModal();
+            advancedSearchModal.Top = (System.Windows.SystemParameters.PrimaryScreenHeight - advancedSearchModal.Height) / 2;
+            advancedSearchModal.Left = (System.Windows.SystemParameters.PrimaryScreenWidth - advancedSearchModal.Width) / 2;
+            Nullable<bool> dialogResult = advancedSearchModal.ShowDialog();
+        }
+
         private void Show_Favourites(object sender, RoutedEventArgs e)
         {
             // Instantiate window

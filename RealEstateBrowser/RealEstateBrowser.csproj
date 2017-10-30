@@ -61,6 +61,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AdvancedSearchModal.xaml.cs">
+      <DependentUpon>AdvancedSearchModal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CompareModal.xaml.cs">
       <DependentUpon>CompareModal.xaml</DependentUpon>
     </Compile>
@@ -89,6 +92,10 @@
     <Compile Include="Welcome3.xaml.cs">
       <DependentUpon>Welcome3.xaml</DependentUpon>
     </Compile>
+    <Page Include="AdvancedSearchModal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="CompareModal.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -68,7 +68,7 @@
                         <Image Source="pack://application:,,,/Resources/CompareRect.png"></Image>
                     </StackPanel>
                 </Button>
-                <Button Width="60" Height="60">
+                <Button Width="60" Height="60" Click="Show_AdvancedSearch">
                     <StackPanel>
                         <Image Source="pack://application:,,,/Resources/SettingsRect.png"></Image>
                     </StackPanel>
