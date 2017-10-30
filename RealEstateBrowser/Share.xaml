@@ -1,0 +1,17 @@
+﻿<Window x:Class="RealEstateBrowser.Share"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RealEstateBrowser"
+        mc:Ignorable="d"
+        Title="Share" Height="300" Width="300">
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="63,69,54,0" TextWrapping="Wrap" Text="Please enter emails to share with" VerticalAlignment="Top" Width="175"/>
+        <Button Content="Send" FontSize="10" Margin="234,238,10,10"/>
+        <TextBox x:Name="email1" HorizontalAlignment="Left" Height="20" Margin="54,96,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="email2" HorizontalAlignment="Left" Height="20" Margin="54,131,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="18" Margin="137,168,0,0" Stroke="Black" VerticalAlignment="Top" Width="18"/>
+        <Label x:Name="label" Content="+" HorizontalAlignment="Left" Margin="137,162,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="0.5,0.5"/>
+    </Grid>
+</Window>

@@ -29,7 +29,7 @@
                     <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Beautiful home near downtown Calgary" FontSize="20" Margin="171,55,0,0" FontStyle="Italic"/>
                     <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="$500,000" FontSize="35" Margin="785,25,0,0" FontWeight="Bold" FontFamily="Sitka Text" TextDecorations="{x:Null}" FontStyle="Italic"/>
 
-                    <Button Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF3CDCFF" Content="Interested" FontSize="20"  Margin="10,24,0,0" Foreground="White" FontFamily="Arial" BorderBrush="White"/>
+                <Button Width="100" Height="40" Click="Show_Share_Popup" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF3CDCFF" Content="Interested" FontSize="20"  Margin="10,24,0,0" Foreground="White" FontFamily="Arial" BorderBrush="White"/>
                     <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="775,50,0,0" 
                     Background="Transparent" BorderBrush="Transparent"
                     Height="100" Width="100" Click="AddToFavourites">
