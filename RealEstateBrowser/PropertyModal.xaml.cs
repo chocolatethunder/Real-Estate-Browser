@@ -35,5 +35,15 @@ namespace RealEstateBrowser
         {
             
         }
+
+        private void Show_Share_Popup(object sender, RoutedEventArgs e)
+        {
+            Share sharewindow = new Share();
+            sharewindow.Top = (System.Windows.SystemParameters.PrimaryScreenHeight - sharewindow.Height) / 2;
+            sharewindow.Left = (System.Windows.SystemParameters.PrimaryScreenWidth - sharewindow.Width) / 2;
+            sharewindow.Topmost = true;
+            Nullable<bool> dialogResult = sharewindow.ShowDialog();
+            e.Handled = true;
+        }
     }
 }
