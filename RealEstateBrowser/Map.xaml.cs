@@ -17,6 +17,9 @@ namespace RealEstateBrowser
         public SwitchMapViews()
         {
             InitializeComponent();
+            this.Height = System.Windows.SystemParameters.PrimaryScreenHeight;
+            this.Width = System.Windows.SystemParameters.PrimaryScreenWidth;
+
             //Set focus on the map
             myMap.Focus();
             // Displays the current latitude and longitude as the map animates.
